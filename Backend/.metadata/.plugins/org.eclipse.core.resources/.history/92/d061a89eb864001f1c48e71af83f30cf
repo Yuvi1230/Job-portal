@@ -1,0 +1,21 @@
+package com.demo.repo;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.springframework.stereotype.Component;
+
+import com.demo.post.Post;
+import com.mongodb.client.MongoClient;
+
+@Component
+public class SearchRepoImpl implements SearchRepo{
+	MongoClient client;
+
+	@Override
+	public List<Post> findByText(String text) {
+		final List<Post> posts= new ArrayList<>();
+		return posts;
+	}
+	
+}

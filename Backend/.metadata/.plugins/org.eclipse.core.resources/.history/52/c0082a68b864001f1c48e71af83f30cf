@@ -1,0 +1,16 @@
+package com.demo.repo;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import com.demo.post.Post;
+
+public class SearchRepoImpl implements SearchRepo{
+
+	@Override
+	public List<Post> findByText(String text) {
+		final List<Post> posts= new ArrayList<>();
+		return posts;
+	}
+	
+}
